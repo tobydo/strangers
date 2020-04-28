@@ -8,6 +8,7 @@ public class playerRotation : MonoBehaviour
 
     public float rotationSpeed = 30f;
     public float deadZoneDegrees = 15f;
+    public Camera camera; 
  
     private Transform cameraT;
     private Vector3 cameraDirection;
@@ -16,7 +17,7 @@ public class playerRotation : MonoBehaviour
  
     private void Awake()
     {
-        cameraT = Camera.main.transform;
+        cameraT = camera.transform;
     }
  
     private void Update()
