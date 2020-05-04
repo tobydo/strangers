@@ -130,7 +130,28 @@ public class StateMachineTest : MonoBehaviour
 
     }
 
-    public void Switch(){
+    public void SwitchOne(){
+       current = Cameras.One;
+            
+                foreach(Camera camera in cameraOn){
+                camera.enabled = false;
+                }
+            currentCamera.enabled = true;
+             buttonOne = KeyCode.None;
+     buttonTwo= KeyCode.None ;
+        }
+
+        public void SwitchTwo(){
+       current = Cameras.Two;
+            
+                foreach(Camera camera in cameraOn){
+                camera.enabled = false;
+                }
+            currentCamera.enabled = true;
+             buttonOne = KeyCode.None;
+     buttonTwo= KeyCode.None ;
+        }
+        public void SwitchThree(){
        current = Cameras.Three;
             
                 foreach(Camera camera in cameraOn){
