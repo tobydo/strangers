@@ -139,6 +139,14 @@ public class StateMachineTest : MonoBehaviour
             currentCamera.enabled = true;
              buttonOne = KeyCode.None;
      buttonTwo= KeyCode.None ;
+
+     AudioListener audioOne = GameObject.Find("Camera One").GetComponent<AudioListener>();
+     AudioListener audioTwo = GameObject.Find("Camera Two").GetComponent<AudioListener>();
+     AudioListener audioThree = GameObject.Find("Camera Three").GetComponent<AudioListener>();
+     audioTwo.enabled = false;
+     audioThree.enabled = false;
+     audioOne.enabled = true;
+
         }
 
         public void SwitchTwo(){
@@ -146,10 +154,19 @@ public class StateMachineTest : MonoBehaviour
             
                 foreach(Camera camera in cameraOn){
                 camera.enabled = false;
+    
                 }
             currentCamera.enabled = true;
              buttonOne = KeyCode.None;
      buttonTwo= KeyCode.None ;
+
+    AudioListener audioOne = GameObject.Find("Camera One").GetComponent<AudioListener>();
+     AudioListener audioTwo = GameObject.Find("Camera Two").GetComponent<AudioListener>();
+     AudioListener audioThree = GameObject.Find("Camera Three").GetComponent<AudioListener>();
+     
+     audioThree.enabled = false;
+     audioOne.enabled = false;
+     audioTwo.enabled = true;
         }
         public void SwitchThree(){
        current = Cameras.Three;
@@ -160,7 +177,19 @@ public class StateMachineTest : MonoBehaviour
             currentCamera.enabled = true;
              buttonOne = KeyCode.None;
      buttonTwo= KeyCode.None ;
+
+      AudioListener audioOne = GameObject.Find("Camera One").GetComponent<AudioListener>();
+     AudioListener audioTwo = GameObject.Find("Camera Two").GetComponent<AudioListener>();
+     AudioListener audioThree = GameObject.Find("Camera Three").GetComponent<AudioListener>();
+      
+       
+     audioOne.enabled = false;
+     audioTwo.enabled = false;
+     audioThree.enabled = true;
+      
+      
         }
+
 
        
     
