@@ -26,6 +26,7 @@ public class playAni : MonoBehaviour
         Debug.Log(animationName);
         ani.SetBool(animationName, true);
         ani.SetBool(lastAnimation, false);
+        ani.SetBool("isWalking", false);
      ani.Play(animationName);
     }
 }
