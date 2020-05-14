@@ -5,14 +5,18 @@ using UnityEngine;
 public class stopWalk : MonoBehaviour
 {
     public GameObject tien;
+    public GameObject body;
     // Start is called before the first frame update
 
 
-    void StopWalk()
+    public void StopWalk()
     {
-        player Player = tien.GetComponent<player>();
+        CharacterController Play = tien.GetComponent<CharacterController>();
+       player walking = body.GetComponent<player>();
 
-        Player.enabled = false;
+        Play.enabled = false;
+        walking.enabled = false;
+        
 
     }
 }
