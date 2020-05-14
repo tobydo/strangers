@@ -47466,8 +47466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1f3a0b547d64d4584b7b9399707e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOne: 49
-  buttonTwo: 50
+  buttonOne: 0
+  buttonTwo: 0
   buttonThree: 0
   Scene: {fileID: 4900000, guid: f6b79fe9380059d41bfea2fc23fac733, type: 3}
   talking: {fileID: 0}
