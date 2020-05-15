@@ -18,8 +18,9 @@ public class stay : MonoBehaviour
         if (scene.name == "Restaurant")
         {
             // Destroy the gameobject this script is attached to
-            Cursor.visible = true;
-            Destroy(gameObject);
+           
+            Destroy(this);
+            Debug.Log("destroyed");
         }
     }
 }
