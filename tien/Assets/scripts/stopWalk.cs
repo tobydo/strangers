@@ -19,4 +19,13 @@ public class stopWalk : MonoBehaviour
         
 
     }
+
+    public void StartWalk(){
+
+          CharacterController Play = tien.GetComponent<CharacterController>();
+       player walking = body.GetComponent<player>();
+
+        Play.enabled = true;
+        walking.enabled = true;
+    }
 }
