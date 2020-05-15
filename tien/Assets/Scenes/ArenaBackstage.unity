@@ -16335,6 +16335,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574937738}
   m_Mesh: {fileID: -6623664664129151695, guid: a843f5a57b01bfb42a5e88b96754de4a, type: 3}
+--- !u!1 &576128622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 3152a03078804eb4d82c1e032e42039b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1891644577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &576128623
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576128622}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6e3f9ce86edc274a8fb00f0482c0f9b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!124 &578953253
 Behaviour:
   m_ObjectHideFlags: 0
@@ -18167,7 +18192,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 662573909}
   selectedCommands:
-  - {fileID: 662573908}
+  - {fileID: 662573941}
   variables: []
   description: 
   stepPause: 0
@@ -38266,12 +38291,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425870718}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 74220040632a0c6489e01b7bf46d8c95, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.662
+  m_Volume: 0.496
   m_Pitch: 1
   Loop: 1
   Mute: 0
